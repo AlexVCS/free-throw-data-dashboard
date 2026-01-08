@@ -7,6 +7,7 @@ from data_loader import load_trial, list_all_trials
 from metrics import extract_trial_metrics
 
 app = dash.Dash(__name__)
+server = app.server
 all_trials = list_all_trials()
 
 app.layout = html.Div([
